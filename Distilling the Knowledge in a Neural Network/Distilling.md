@@ -50,7 +50,8 @@ Distillationは, Teacherの出力 (予測確率)を使ってStudentの学習を�
 
 ![CodeCogsEqn-3](https://user-images.githubusercontent.com/57211829/79752836-deb0b880-834f-11ea-986f-be85f217170c.png)
 
-
+以下の図が手法をよく表現している
+![ss](https://paperdrip-dl.github.io/assets/img/20181223/distillation.png)
 
 ## 参考
 ・https://paperdrip-dl.github.io/distillation/2018/12/23/Distillating-Knowledge-in-Neural-Networks.html
