@@ -28,17 +28,16 @@ BaseCNNからRPNまで統一された１つのNeual Network(**One-stage**)で構
 
 ![image](https://user-images.githubusercontent.com/57211829/79826102-cdaa8a80-83d5-11ea-9e70-1aff5595d46c.png)![image](https://user-images.githubusercontent.com/57211829/79826130-e024c400-83d5-11ea-81b1-82dee13d1cfc.png)
 
+**全体の流れ**
+
+1. BaseNet(VGG16)に画像を入力し, 中間層の特徴マップを得る.(H/16, W/16, 512)
+2. BaseNetから得た特徴マップ(H/16, W/16,512)にConv2D((3,3),512)
+3. さらにConv2d((1,1),k)とConv2D((1,1),4k)を掛ける. それぞれclsとregになっている.(RPNの出力)
+4. RPNからのBBはIoU>0.7:positiveとIoU<0.3:negativeとしてNMSを適用したものを学習に使用
+5. 特徴マップのBBのエリアに対してRoI Poolingを行い、(N,7,7,512)tensorを出力. ここでNはBBの総数
+6. Flatten, FCにより他クラス分類と矩形回帰(Reg)を行う.
 
 
-
-
-
-
-
-
-
-
-
-## 議論はある？
 
 ## 次に読むべき論文は？
+Mask R-CNN, YOLO,SSD
