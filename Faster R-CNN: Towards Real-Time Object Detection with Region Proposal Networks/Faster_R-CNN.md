@@ -26,9 +26,7 @@ RPNにより提案領域数抑制&mAP向上
 VGG16, ZFNet等のBaseCNNからの出力(Feature map)を受け取り, 低次元のFeature mapへ. 領域が物体か背景か(objectness)および位置の補正データ(corrdinates)を出力する.
 BaseCNNからRPNまで統一された１つのNeual Network(**One-stage**)で構築できるため同時に学習(**End-to-End**)することができる.
 
-![image](https://user-images.githubusercontent.com/57211829/79826102-cdaa8a80-83d5-11ea-9e70-1aff5595d46c.png)
-
-![image](https://user-images.githubusercontent.com/57211829/79826130-e024c400-83d5-11ea-81b1-82dee13d1cfc.png)
+![image](https://user-images.githubusercontent.com/57211829/79826102-cdaa8a80-83d5-11ea-9e70-1aff5595d46c.png)![image](https://user-images.githubusercontent.com/57211829/79826130-e024c400-83d5-11ea-81b1-82dee13d1cfc.png)
 
 
 
