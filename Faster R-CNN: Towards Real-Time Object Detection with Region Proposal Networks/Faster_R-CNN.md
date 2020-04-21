@@ -1,6 +1,7 @@
 ## どんなもの
 
 ### 論文
+Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks 
 
 
 
@@ -9,6 +10,7 @@
 
 
 ### 投稿日
+4 Jun 2015
 
 
 
