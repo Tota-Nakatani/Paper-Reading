@@ -28,8 +28,27 @@ CNNの学習に成功した
 
 1. Deterministic
 
-![as](https://latex.codecogs.com/gif.latex?w_{b}=\begin{cases}&space;&plus;1\hspace{6}&space;if&space;w\geq&space;0,\\&space;-1&space;\hspace{6}&space;otherwise.&space;\end{cases})
+![CodeCogsEqn-4](https://user-images.githubusercontent.com/57211829/79951430-a0cca500-84b3-11ea-805d-a4053618d1d5.png)
 
+シグナル関数でバイナリ化を行う.
+
+2. Stochastic
+
+![CodeCogsEqn-5](https://user-images.githubusercontent.com/57211829/79951773-47b14100-84b4-11ea-8b3e-12fb33840e04.png)
+
+ただしσはハードシグモイド関数である.
+
+つまり, まとめると以下の数式になる.
+
+![CodeCogsEqn-6](https://user-images.githubusercontent.com/57211829/79952114-df169400-84b4-11ea-8932-ffd71043a977.png)
+
+
+## Algorithm
+
+学習の処理をforward propagation, backward propagation, updateと分類すると, forward propagationとbackward propagationではweightをbinarizationし, updateでは実数を使用します. updateを実数で行う理由は, parameterの変化量は非常に小さいため.
+
+
+![a](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F100523%2F88ccb10d-675d-a57e-017d-ef60976f96e3.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=6c01ddfa17abf71cbafb39c4230dda36)
 
 
 
