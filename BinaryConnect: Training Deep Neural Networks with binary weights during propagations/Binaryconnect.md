@@ -28,7 +28,7 @@ CNNの学習に成功した
 
 1. Deterministic
 
-![a]{https://latex.codecogs.com/gif.latex?w_{b}=\begin{cases}&space;&plus;1\hspace{6}&space;if&space;w\geq&space;0,\\&space;-1&space;\hspace{6}&space;otherwise.&space;\end{cases}}
+<img src="https://latex.codecogs.com/gif.latex?w_{b}=\begin{cases}&space;&plus;1\hspace{6}&space;if&space;w\geq&space;0,\\&space;-1&space;\hspace{6}&space;otherwise.&space;\end{cases}"
 
 
 
