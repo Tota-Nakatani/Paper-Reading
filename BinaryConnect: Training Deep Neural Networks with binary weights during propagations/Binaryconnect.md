@@ -63,5 +63,3 @@ Binarized Neural Networks: Training Neural Networks with Weights and Activations
 ・　https://metrica-tech.hatenablog.jp/entry/2019/06/15/000000
 
 ・　https://qiita.com/supersaiakujin/items/fb0f6201a6a6da1981b2
-Binarized Neural Networks: Training Neural Networks with Weights and Activations Constrained to +1 or −1#
-Binarized Neural Networks: Training Neural Networks with Weights and Activations Constrained to +1 or −1
