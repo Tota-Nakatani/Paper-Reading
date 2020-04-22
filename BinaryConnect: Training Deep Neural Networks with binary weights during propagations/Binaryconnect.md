@@ -14,7 +14,7 @@ Matthieu Courbariaux(E ́cole Polytechnique de Montre ́al)・Yoshua Bengio(Univ
 ## abstract
 近年Deep Learningの発展に伴い, 学習時や本番環境での計算量が膨大になっている. Deep Learnigにおける計算は行列の乗算が主である.
 
-**重みの2値化** によるDeepLearningの計算高速化の手法の1つとして, **BinaryConnect(BC)** を提案した. これにより乗算が加算に置き換えられ計算量が削減された.
+**重みの2値化** によるDeepLearningの計算高速化の手法の1つとして, **BinaryConnect(BC)** を提案した. これにより精度を保ったまま計算量が削減された.
 
 
 ## 先行研究と比べて何がすごい？
