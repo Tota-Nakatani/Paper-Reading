@@ -21,13 +21,11 @@ skip-connectionにより広域特徴をより捉えられている.
 ## 技術や手法のキモはどこ？
 ![image](https://user-images.githubusercontent.com/57211829/80674531-19071c00-8aed-11ea-9103-a014d99b6723.png)
 
-###skip-connection
-U-Netでは, チャネルに対する連結(concatenate)をしている. スキップ元の情報をそのまま使うことで, 位置情報を保っている.．
+### skip-connection
+U-Netでは, チャネルに対する連結(**concatenate**)をしている. スキップ元の情報をそのまま使うことで, 位置情報を保っている.．
 CNNでは特徴マップを畳み込むほど位置情報は曖昧になるが, Semantic Segmentationにおいて位置情報は非常に重要. 
-故にUp-Sampling後にencoder部の同次元数の特徴マップを連結することで，従来どおり特徴を抽出しつつ，位置情報を保持することができます．
+故に, Up-Sampling後にencoder部の同次元数の特徴マップを連結することで, 従来どおり特徴を抽出しつつ位置情報を保持することができる.
 
-
-
-## 議論はある？
 
 ## 次に読むべき論文は？
+SENet,Deeplab
