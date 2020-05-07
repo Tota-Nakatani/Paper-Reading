@@ -52,4 +52,5 @@ Pointwiseの1*1Convの計算量を減らす**bottleneck構造(Inverted Residual)
 
 
 ## 次に読むべき論文は？
+MobileNet_v3(SE モジュールの導入)
 
