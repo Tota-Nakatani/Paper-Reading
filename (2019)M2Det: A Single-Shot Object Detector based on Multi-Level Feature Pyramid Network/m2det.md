@@ -55,10 +55,24 @@ FFMの出力を入力とし, FCNのようなencoder-decoderのautoencoder構造�
 
 encoder側とdecoder側のfmapを1:1対応でfusionさせ, pyramid構造のfmapを得る.
 
-ただし
-encoder側とdecoder側のfmapを1:1対応でfusionさせ, pyramid構造のfmapを得る.ここでは
-encoder側とdecoder側のfmapを1:1対応でfusionさせ, pyramid構造のfmapを得る.
+ただし, 足し合わせるfampの解像度は異なる. これによりまたマルチスケール対応.
 
-## 議論はある？
+このpyramidのうち最も解像度の高いものをFFM2に入力
 
-## 次に読むべき論文は？
+### FFM_v2
+TUMの最大解像度のfmapとbase featureをconcateしてまた次のTUMへ
+
+これ繰り返すことにより **(高解像度のfmapに対するFFM_v2,TUMを繰り返す)Deepな特徴（小物体、エッジ)を捉えることができる!!**
+
+###  SFAM (scale-wise Feature Aggregation Module )
+
+![image](https://user-images.githubusercontent.com/57211829/81303799-273dd500-90b7-11ea-9374-2e8f571c4093.png)
+
+TUMの出力のPyramid型のfmapたちのそれぞれ同じ解像度同士fmapをconcateして, SEモジュールを適用して１つのPyramid型のfmapに
+
+以降はSSDと同じでconvかけてregとclsで学習する
+
+
+
+## 参考
+https://qiita.com/kzykmyzw/items/1831f70dcade04db2210
